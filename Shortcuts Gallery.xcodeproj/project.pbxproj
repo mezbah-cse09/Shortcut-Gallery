@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		4C1D795020F3576300D66622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D794F20F3576300D66622 /* AppDelegate.swift */; };
-		4C1D795220F3576300D66622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D795120F3576300D66622 /* ViewController.swift */; };
-		4C1D795520F3576300D66622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D795320F3576300D66622 /* Main.storyboard */; };
+		4C1D795220F3576300D66622 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D795120F3576300D66622 /* GalleryTableViewController.swift */; };
 		4C1D795720F3576500D66622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D795620F3576500D66622 /* Assets.xcassets */; };
 		4C1D795A20F3576500D66622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D795820F3576500D66622 /* LaunchScreen.storyboard */; };
 		4C1D796520F3576500D66622 /* Shortcuts_GalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D796420F3576500D66622 /* Shortcuts_GalleryTests.swift */; };
 		4C1D797020F3576500D66622 /* Shortcuts_GalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D796F20F3576500D66622 /* Shortcuts_GalleryUITests.swift */; };
+		4C1D797E20F3580300D66622 /* GalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D797D20F3580300D66622 /* GalleryDataSource.swift */; };
+		4C1D798020F3589300D66622 /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D797F20F3589300D66622 /* Shortcut.swift */; };
+		4C1D798120F3589300D66622 /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D797F20F3589300D66622 /* Shortcut.swift */; };
+		4C1D798220F3589300D66622 /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D797F20F3589300D66622 /* Shortcut.swift */; };
+		4C1D798D20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D798B20F35C3600D66622 /* GalleryTableViewCell.swift */; };
+		4C1D798E20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D798B20F35C3600D66622 /* GalleryTableViewCell.swift */; };
+		4C1D798F20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D798B20F35C3600D66622 /* GalleryTableViewCell.swift */; };
+		4C1D799020F35C3600D66622 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D798C20F35C3600D66622 /* GalleryTableViewCell.xib */; };
+		4C1D799120F35C3600D66622 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D798C20F35C3600D66622 /* GalleryTableViewCell.xib */; };
+		4C1D799220F35C3600D66622 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D798C20F35C3600D66622 /* GalleryTableViewCell.xib */; };
+		4C1D799420F3633400D66622 /* ShortcutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799320F3633400D66622 /* ShortcutDetail.swift */; };
+		4C1D799520F3633400D66622 /* ShortcutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799320F3633400D66622 /* ShortcutDetail.swift */; };
+		4C1D799620F3633400D66622 /* ShortcutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799320F3633400D66622 /* ShortcutDetail.swift */; };
+		4C1D799820F3639100D66622 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799720F3639100D66622 /* User.swift */; };
+		4C1D799920F3639100D66622 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799720F3639100D66622 /* User.swift */; };
+		4C1D799A20F3639100D66622 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799720F3639100D66622 /* User.swift */; };
+		4C1D799C20F36BF700D66622 /* ShortcutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */; };
+		4C1D799D20F36BF700D66622 /* ShortcutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */; };
+		4C1D799E20F36BF700D66622 /* ShortcutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +54,7 @@
 /* Begin PBXFileReference section */
 		4C1D794C20F3576300D66622 /* Shortcuts Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shortcuts Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1D794F20F3576300D66622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C1D795120F3576300D66622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C1D795420F3576300D66622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C1D795120F3576300D66622 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
 		4C1D795620F3576500D66622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1D795920F3576500D66622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1D795B20F3576500D66622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +64,13 @@
 		4C1D796B20F3576500D66622 /* Shortcuts GalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shortcuts GalleryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1D796F20F3576500D66622 /* Shortcuts_GalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts_GalleryUITests.swift; sourceTree = "<group>"; };
 		4C1D797120F3576500D66622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1D797D20F3580300D66622 /* GalleryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDataSource.swift; sourceTree = "<group>"; };
+		4C1D797F20F3589300D66622 /* Shortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
+		4C1D798B20F35C3600D66622 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		4C1D798C20F35C3600D66622 /* GalleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryTableViewCell.xib; sourceTree = "<group>"; };
+		4C1D799320F3633400D66622 /* ShortcutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutDetail.swift; sourceTree = "<group>"; };
+		4C1D799720F3639100D66622 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +122,17 @@
 			isa = PBXGroup;
 			children = (
 				4C1D794F20F3576300D66622 /* AppDelegate.swift */,
-				4C1D795120F3576300D66622 /* ViewController.swift */,
-				4C1D795320F3576300D66622 /* Main.storyboard */,
+				4C1D795120F3576300D66622 /* GalleryTableViewController.swift */,
+				4C1D797D20F3580300D66622 /* GalleryDataSource.swift */,
 				4C1D795620F3576500D66622 /* Assets.xcassets */,
 				4C1D795820F3576500D66622 /* LaunchScreen.storyboard */,
 				4C1D795B20F3576500D66622 /* Info.plist */,
+				4C1D798B20F35C3600D66622 /* GalleryTableViewCell.swift */,
+				4C1D798C20F35C3600D66622 /* GalleryTableViewCell.xib */,
+				4C1D797F20F3589300D66622 /* Shortcut.swift */,
+				4C1D799320F3633400D66622 /* ShortcutDetail.swift */,
+				4C1D799720F3639100D66622 /* User.swift */,
+				4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */,
 			);
 			path = "Shortcuts Gallery";
 			sourceTree = "<group>";
@@ -230,8 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1D795A20F3576500D66622 /* LaunchScreen.storyboard in Resources */,
+				4C1D799020F35C3600D66622 /* GalleryTableViewCell.xib in Resources */,
 				4C1D795720F3576500D66622 /* Assets.xcassets in Resources */,
-				4C1D795520F3576300D66622 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1D799120F35C3600D66622 /* GalleryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1D799220F35C3600D66622 /* GalleryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1D795220F3576300D66622 /* ViewController.swift in Sources */,
+				4C1D795220F3576300D66622 /* GalleryTableViewController.swift in Sources */,
+				4C1D798020F3589300D66622 /* Shortcut.swift in Sources */,
+				4C1D799420F3633400D66622 /* ShortcutDetail.swift in Sources */,
 				4C1D795020F3576300D66622 /* AppDelegate.swift in Sources */,
+				4C1D799C20F36BF700D66622 /* ShortcutResponse.swift in Sources */,
+				4C1D798D20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */,
+				4C1D797E20F3580300D66622 /* GalleryDataSource.swift in Sources */,
+				4C1D799820F3639100D66622 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1D799D20F36BF700D66622 /* ShortcutResponse.swift in Sources */,
 				4C1D796520F3576500D66622 /* Shortcuts_GalleryTests.swift in Sources */,
+				4C1D798120F3589300D66622 /* Shortcut.swift in Sources */,
+				4C1D799520F3633400D66622 /* ShortcutDetail.swift in Sources */,
+				4C1D799920F3639100D66622 /* User.swift in Sources */,
+				4C1D798E20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1D799E20F36BF700D66622 /* ShortcutResponse.swift in Sources */,
 				4C1D797020F3576500D66622 /* Shortcuts_GalleryUITests.swift in Sources */,
+				4C1D798220F3589300D66622 /* Shortcut.swift in Sources */,
+				4C1D799620F3633400D66622 /* ShortcutDetail.swift in Sources */,
+				4C1D799A20F3639100D66622 /* User.swift in Sources */,
+				4C1D798F20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4C1D795320F3576300D66622 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C1D795420F3576300D66622 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4C1D795820F3576500D66622 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
