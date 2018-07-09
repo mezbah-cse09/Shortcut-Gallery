@@ -32,9 +32,7 @@ class GalleryTableViewController: UITableViewController {
         
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(load), for: .valueChanged)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
+        
         load()
     }
     
