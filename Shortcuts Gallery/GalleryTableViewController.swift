@@ -21,6 +21,7 @@ class GalleryTableViewController: UITableViewController {
         
         tableView.register(UINib(nibName: "GalleryTableViewCell", bundle: nil), forCellReuseIdentifier: "galleryCell")
         tableView.dataSource = dataSource
+        tableView.delegate = dataSource
         tableView.separatorStyle = .none
         tableView.contentInset.top = 30
         
