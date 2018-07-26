@@ -82,7 +82,7 @@ extension GalleryDataManager: UITableViewDelegate {
         DispatchQueue.main.async {
             let alert = UIAlertController(title: "This will open this shortcut in Shortcuts", message: "Do you want to proceed?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { (_) in
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (_) in
                 let shortcut = self.shortcuts[indexPath.row]
                 
                 self.getDetail(for: shortcut) { (detail) in

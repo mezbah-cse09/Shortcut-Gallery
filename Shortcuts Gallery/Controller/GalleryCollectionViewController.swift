@@ -15,11 +15,13 @@ class GalleryCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let cv = collectionView else { return }
 
         // Register cell classes
-        self.collectionView.register(UINib(nibName: "GalleryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "galleryCell")
-        self.collectionView.backgroundColor = .white
-        self.collectionView.contentInset = UIEdgeInsets(top: 8, left: 2, bottom: 0, right: 2)
+        cv.register(UINib(nibName: "GalleryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "galleryCell")
+        cv.backgroundColor = .white
+        cv.contentInset = UIEdgeInsets(top: 8, left: 2, bottom: 0, right: 2)
         
         //Custom setup
         configureNavBar()
@@ -61,7 +63,7 @@ class GalleryCollectionViewController: UICollectionViewController {
         Shortcut.loadLatest { (response) in
             DispatchQueue.main.async {
                 self.data = response
-                self.collectionView.reloadData()
+                self.collectionView?.reloadData()
                 self.refreshControl.endRefreshing()
             }
         }
@@ -70,7 +72,7 @@ class GalleryCollectionViewController: UICollectionViewController {
     private func configureRefresh() {
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(load), for: .valueChanged)
-        collectionView.refreshControl = refreshControl
+        collectionView?.refreshControl = refreshControl
     }
     
     private func configureNavBar() {

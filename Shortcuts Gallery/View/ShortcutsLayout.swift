@@ -15,7 +15,8 @@ class ShortcutsLayout: UICollectionViewFlowLayout {
         
         guard let cv = collectionView else { return }
         
-        let availableWidth = cv.bounds.inset(by: cv.layoutMargins).size.width
+//        let availableWidth = cv.bounds.inset(by: cv.layoutMargins).size.width
+        let availableWidth = UIEdgeInsetsInsetRect(cv.bounds, cv.layoutMargins).size.width
         
         let minColumnWidth = CGFloat(290)
         let maxNumColumns = (availableWidth / minColumnWidth).rounded(.toNearestOrEven)
