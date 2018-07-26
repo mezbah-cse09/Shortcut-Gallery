@@ -1,1 +1,3 @@
-language: objective-c
+language: swift
+xcode_project: Shortcuts_Gallery.xcodeproj
+xcode_scheme: Shortcuts_GalleryTests
