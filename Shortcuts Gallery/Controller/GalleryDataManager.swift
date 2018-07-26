@@ -13,7 +13,15 @@ class GalleryDataManager: NSObject {
     var shortcuts: [Shortcut]
     var details = [String: ShortcutDetail]()
     weak var viewController: UIViewController?
-    private var colors = [UIColor(red: 150/255, green: 212/255, blue: 68/255, alpha: 1.0),
+
+    private var colors = [
+                          UIColor(red: 62/255, green: 118/255, blue: 235/255, alpha: 1.0),
+                          UIColor(red: 215/255, green: 78/255, blue: 78/255, alpha: 1.0),
+                          UIColor(red: 205/255, green: 121/255, blue: 170/255, alpha: 1.0),
+                          UIColor(red: 114/255, green: 180/255, blue: 175/255, alpha: 1.0),
+                          UIColor(red: 221/255, green: 103/255, blue: 73/255, alpha: 1.0),
+                          UIColor(red: 163/255, green: 114/255, blue: 221/255, alpha: 1.0),
+                          UIColor(red: 150/255, green: 212/255, blue: 68/255, alpha: 1.0),
                           UIColor(red: 247/255, green: 170/255, blue: 135/255, alpha: 1.0),
                           UIColor(red: 228/255, green: 103/255, blue: 158/255, alpha: 1.0),
                           UIColor(red: 74/255, green: 144/255, blue: 226/255, alpha: 1.0)]
@@ -74,7 +82,7 @@ extension GalleryDataManager: UITableViewDelegate {
         DispatchQueue.main.async {
             let alert = UIAlertController(title: "This will open this shortcut in Shortcuts", message: "Do you want to proceed?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { (_) in
+            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { (_) in
                 let shortcut = self.shortcuts[indexPath.row]
                 
                 self.getDetail(for: shortcut) { (detail) in

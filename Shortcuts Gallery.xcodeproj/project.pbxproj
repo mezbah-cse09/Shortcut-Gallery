@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4C1D795020F3576300D66622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D794F20F3576300D66622 /* AppDelegate.swift */; };
-		4C1D795220F3576300D66622 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D795120F3576300D66622 /* GalleryTableViewController.swift */; };
 		4C1D795720F3576500D66622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D795620F3576500D66622 /* Assets.xcassets */; };
 		4C1D795A20F3576500D66622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D795820F3576500D66622 /* LaunchScreen.storyboard */; };
 		4C1D796520F3576500D66622 /* Shortcuts_GalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D796420F3576500D66622 /* Shortcuts_GalleryTests.swift */; };
@@ -33,6 +32,24 @@
 		4C1D799D20F36BF700D66622 /* ShortcutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */; };
 		4C1D799E20F36BF700D66622 /* ShortcutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */; };
 		4CADD13F20F396F900267F16 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADD13D20F396F900267F16 /* AboutTableViewController.swift */; };
+		4CDB9ADE210A06D700B58123 /* ShortcutsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9ADD210A06D700B58123 /* ShortcutsLayout.swift */; };
+		4CDB9ADF210A06D700B58123 /* ShortcutsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9ADD210A06D700B58123 /* ShortcutsLayout.swift */; };
+		4CDB9AE0210A06D700B58123 /* ShortcutsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9ADD210A06D700B58123 /* ShortcutsLayout.swift */; };
+		4CDB9AE2210A06EB00B58123 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE1210A06EB00B58123 /* GalleryCollectionViewController.swift */; };
+		4CDB9AE3210A06EB00B58123 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE1210A06EB00B58123 /* GalleryCollectionViewController.swift */; };
+		4CDB9AE4210A06EB00B58123 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE1210A06EB00B58123 /* GalleryCollectionViewController.swift */; };
+		4CDB9AE7210A0B0C00B58123 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE5210A0B0C00B58123 /* GalleryCollectionViewCell.swift */; };
+		4CDB9AE8210A0B0C00B58123 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE5210A0B0C00B58123 /* GalleryCollectionViewCell.swift */; };
+		4CDB9AE9210A0B0C00B58123 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE5210A0B0C00B58123 /* GalleryCollectionViewCell.swift */; };
+		4CDB9AEA210A0B0C00B58123 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE6210A0B0C00B58123 /* GalleryCollectionViewCell.xib */; };
+		4CDB9AEB210A0B0C00B58123 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE6210A0B0C00B58123 /* GalleryCollectionViewCell.xib */; };
+		4CDB9AEC210A0B0C00B58123 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB9AE6210A0B0C00B58123 /* GalleryCollectionViewCell.xib */; };
+		4CDB9AEE210A0F8100B58123 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AED210A0F8100B58123 /* Colors.swift */; };
+		4CDB9AEF210A0F8100B58123 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AED210A0F8100B58123 /* Colors.swift */; };
+		4CDB9AF0210A0F8100B58123 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AED210A0F8100B58123 /* Colors.swift */; };
+		4CDB9AF2210A22B100B58123 /* ColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB9AF1210A22B100B58123 /* ColorsTests.swift */; };
+		4CDB9AF3210A234300B58123 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADD13D20F396F900267F16 /* AboutTableViewController.swift */; };
+		4CDB9AF4210A234400B58123 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADD13D20F396F900267F16 /* AboutTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +72,6 @@
 /* Begin PBXFileReference section */
 		4C1D794C20F3576300D66622 /* Shortcuts Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shortcuts Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1D794F20F3576300D66622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C1D795120F3576300D66622 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
 		4C1D795620F3576500D66622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1D795920F3576500D66622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1D795B20F3576500D66622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +89,12 @@
 		4C1D799720F3639100D66622 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutResponse.swift; sourceTree = "<group>"; };
 		4CADD13D20F396F900267F16 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		4CDB9ADD210A06D700B58123 /* ShortcutsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsLayout.swift; sourceTree = "<group>"; };
+		4CDB9AE1210A06EB00B58123 /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
+		4CDB9AE5210A0B0C00B58123 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CDB9AE6210A0B0C00B58123 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
+		4CDB9AED210A0F8100B58123 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4CDB9AF1210A22B100B58123 /* ColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +157,9 @@
 		4C1D796320F3576500D66622 /* Shortcuts GalleryTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C1D796420F3576500D66622 /* Shortcuts_GalleryTests.swift */,
 				4C1D796620F3576500D66622 /* Info.plist */,
+				4C1D796420F3576500D66622 /* Shortcuts_GalleryTests.swift */,
+				4CDB9AF1210A22B100B58123 /* ColorsTests.swift */,
 			);
 			path = "Shortcuts GalleryTests";
 			sourceTree = "<group>";
@@ -154,9 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				4C1D794F20F3576300D66622 /* AppDelegate.swift */,
-				4C1D795120F3576300D66622 /* GalleryTableViewController.swift */,
 				4C1D797D20F3580300D66622 /* GalleryDataManager.swift */,
 				4CADD13D20F396F900267F16 /* AboutTableViewController.swift */,
+				4CDB9AE1210A06EB00B58123 /* GalleryCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +191,7 @@
 				4C1D799320F3633400D66622 /* ShortcutDetail.swift */,
 				4C1D799720F3639100D66622 /* User.swift */,
 				4C1D799B20F36BF700D66622 /* ShortcutResponse.swift */,
+				4CDB9AED210A0F8100B58123 /* Colors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +202,9 @@
 				4C1D795820F3576500D66622 /* LaunchScreen.storyboard */,
 				4C1D798B20F35C3600D66622 /* GalleryTableViewCell.swift */,
 				4C1D798C20F35C3600D66622 /* GalleryTableViewCell.xib */,
+				4CDB9ADD210A06D700B58123 /* ShortcutsLayout.swift */,
+				4CDB9AE5210A0B0C00B58123 /* GalleryCollectionViewCell.swift */,
+				4CDB9AE6210A0B0C00B58123 /* GalleryCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1D795A20F3576500D66622 /* LaunchScreen.storyboard in Resources */,
+				4CDB9AEA210A0B0C00B58123 /* GalleryCollectionViewCell.xib in Resources */,
 				4C1D799020F35C3600D66622 /* GalleryTableViewCell.xib in Resources */,
 				4C1D795720F3576500D66622 /* Assets.xcassets in Resources */,
 			);
@@ -305,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1D799120F35C3600D66622 /* GalleryTableViewCell.xib in Resources */,
+				4CDB9AEB210A0B0C00B58123 /* GalleryCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1D799220F35C3600D66622 /* GalleryTableViewCell.xib in Resources */,
+				4CDB9AEC210A0B0C00B58123 /* GalleryCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,11 +353,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1D795220F3576300D66622 /* GalleryTableViewController.swift in Sources */,
+				4CDB9AE2210A06EB00B58123 /* GalleryCollectionViewController.swift in Sources */,
+				4CDB9AE7210A0B0C00B58123 /* GalleryCollectionViewCell.swift in Sources */,
 				4C1D798020F3589300D66622 /* Shortcut.swift in Sources */,
 				4C1D799420F3633400D66622 /* ShortcutDetail.swift in Sources */,
 				4C1D795020F3576300D66622 /* AppDelegate.swift in Sources */,
 				4C1D799C20F36BF700D66622 /* ShortcutResponse.swift in Sources */,
+				4CDB9ADE210A06D700B58123 /* ShortcutsLayout.swift in Sources */,
+				4CDB9AEE210A0F8100B58123 /* Colors.swift in Sources */,
 				4C1D798D20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */,
 				4C1D797E20F3580300D66622 /* GalleryDataManager.swift in Sources */,
 				4C1D799820F3639100D66622 /* User.swift in Sources */,
@@ -340,11 +373,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1D799D20F36BF700D66622 /* ShortcutResponse.swift in Sources */,
+				4CDB9AEF210A0F8100B58123 /* Colors.swift in Sources */,
 				4C1D796520F3576500D66622 /* Shortcuts_GalleryTests.swift in Sources */,
+				4CDB9ADF210A06D700B58123 /* ShortcutsLayout.swift in Sources */,
+				4CDB9AE3210A06EB00B58123 /* GalleryCollectionViewController.swift in Sources */,
 				4C1D798120F3589300D66622 /* Shortcut.swift in Sources */,
+				4CDB9AF2210A22B100B58123 /* ColorsTests.swift in Sources */,
 				4C1D799520F3633400D66622 /* ShortcutDetail.swift in Sources */,
 				4C1D799920F3639100D66622 /* User.swift in Sources */,
+				4CDB9AE8210A0B0C00B58123 /* GalleryCollectionViewCell.swift in Sources */,
 				4C1D798E20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */,
+				4CDB9AF3210A234300B58123 /* AboutTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,10 +392,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1D799E20F36BF700D66622 /* ShortcutResponse.swift in Sources */,
+				4CDB9AF0210A0F8100B58123 /* Colors.swift in Sources */,
 				4C1D797020F3576500D66622 /* Shortcuts_GalleryUITests.swift in Sources */,
+				4CDB9AF4210A234400B58123 /* AboutTableViewController.swift in Sources */,
+				4CDB9AE0210A06D700B58123 /* ShortcutsLayout.swift in Sources */,
+				4CDB9AE4210A06EB00B58123 /* GalleryCollectionViewController.swift in Sources */,
 				4C1D798220F3589300D66622 /* Shortcut.swift in Sources */,
 				4C1D799620F3633400D66622 /* ShortcutDetail.swift in Sources */,
 				4C1D799A20F3639100D66622 /* User.swift in Sources */,
+				4CDB9AE9210A0B0C00B58123 /* GalleryCollectionViewCell.swift in Sources */,
 				4C1D798F20F35C3600D66622 /* GalleryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
