@@ -18,7 +18,7 @@ class ColorsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testConsecutiveColorsAreAlwaysDifferents() {
+    func testConsecutiveColorsAreAlwaysDifferent() {
         let first = Colors.random()
         let second = Colors.random()
         
