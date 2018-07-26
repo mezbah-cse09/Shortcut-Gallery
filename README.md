@@ -1,4 +1,4 @@
-# Shortcuts Gallery
+# Shortcuts Gallery [![Build Status](https://travis-ci.org/marcocapano/Shortcut-Gallery.svg?branch=master)](https://travis-ci.org/marcocapano/Shortcut-Gallery)
 
 An app to discover Shortcuts from all around the world.
 
