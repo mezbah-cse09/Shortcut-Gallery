@@ -4,7 +4,7 @@ An app to discover Shortcuts from all around the world.
 
 #### Created by: [@marcocapano1](https://Twitter.com/marcocapano1)
 
-![ScreenShot](/screenshots/gallery.png)
+<img src="/screenshots/gallery.png" width="100">
 
 ## Contributors
 Marco Capano, [@marcocapano1](https://Twitter.com/marcocapano1) (creator)
