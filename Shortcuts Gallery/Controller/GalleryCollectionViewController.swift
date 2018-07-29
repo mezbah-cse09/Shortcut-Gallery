@@ -12,20 +12,16 @@ class GalleryCollectionViewController: UICollectionViewController {
     
     var data = ShortcutResponse(count: 0, results: [])
     lazy var refreshControl = UIRefreshControl()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         guard let cv = collectionView else { return }
 
-        // Register cell classes
-        cv.register(UINib(nibName: "GalleryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "galleryCell")
-        cv.backgroundColor = .white
-        cv.contentInset = UIEdgeInsets(top: 8, left: 2, bottom: 0, right: 2)
-        
-        //Custom setup
-        configureNavBar()
-        configureRefresh()
+        //Setup
+        configureCollectionView(cv)
+        goLargeTitle(text: "Gallery")
+        add(button: UIButton(type: .infoLight), position: .right, selector: #selector(showAbout))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,20 +65,11 @@ class GalleryCollectionViewController: UICollectionViewController {
         }
     }
     
-    private func configureRefresh() {
-        refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(load), for: .valueChanged)
-        collectionView?.refreshControl = refreshControl
+    private func configureCollectionView(_ cv: UICollectionView) {
+        // Register cell classes
+        cv.register(UINib(nibName: "GalleryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "galleryCell")
+        cv.backgroundColor = .white
+        cv.contentInset = UIEdgeInsets(top: 8, left: 2, bottom: 0, right: 2)
+        cv.add(refreshControl: refreshControl, target: self, selector: #selector(load))
     }
-    
-    private func configureNavBar() {
-        title = "Gallery"
-        navigationItem.largeTitleDisplayMode = .always
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        let infoButton = UIButton(type: .infoLight)
-        infoButton.addTarget(self, action: #selector(showAbout), for: .touchUpInside)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
-    }
-
 }
